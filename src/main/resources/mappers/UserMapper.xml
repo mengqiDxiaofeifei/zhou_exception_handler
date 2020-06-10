@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhou.site.dao.UserDao">
+
+    <select id="getUserList" resultType="com.zhou.entity.User">
+        SELECT
+			`id`,
+			`user_uuid`,
+			`type`,
+			`username`,
+			`password`,
+			`email`,
+			`telephone`,
+			`role`,
+			`status`,
+			`image`,
+			`last_ip`,
+			`last_time`,
+			`create_time`,
+			`update_time`
+		FROM tb_user
+    </select>
+
+</mapper>
